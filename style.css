@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -76,6 +75,7 @@ nav button{
     text-align: center;
 }
 
+/* > sign means immediate child from the class */
 .hero> :nth-child(3){
     font-size: 20px;
     font-weight: 400;
@@ -89,13 +89,18 @@ nav button{
 
 .btn{
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243,0.342);
+    border-radius: 4px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
 
 }
 
 .btn-red{
     background-color: red;
+    font-weight: 400;
     color: white;
     padding: 3px 24px;
     font-size: 20px;
@@ -116,6 +121,11 @@ nav button{
     gap: 16px;
 }
 
+.hero-buttons input{
+    color: white;
+
+}
+
 .main input{
     padding: 7px 101px 8px 14px;
     font-size: 12px;
@@ -123,4 +133,54 @@ nav button{
     background-color: rgba(23,23,23,0.7);
     border: 1px solid rgba(246,238,238,0.5);
 
+}
+
+
+.first{
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* .secImg video{
+    position: absolute;
+} */
+
+
+.secImg{
+    position: relative;
+
+}
+
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+} 
+
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+section.first> div :nth-child(1){
+   font-size: 48px;
+   font-weight: bolder;
+}
+
+section.first> div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
 }
